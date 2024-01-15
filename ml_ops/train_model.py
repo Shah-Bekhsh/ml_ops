@@ -37,6 +37,6 @@ checkpoint = {'input_size': input_size,
               'hidden_units': hidden_units,
               'state_dict': model_.state_dict()}
 
-torch.save(checkpoint, './models/checkpoint.pth')
+torch.save(checkpoint, 'ml_ops/models/checkpoint.pth')
 
 print("Checkpoint: \n\n", checkpoint, '\n')

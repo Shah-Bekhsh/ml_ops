@@ -1,9 +1,9 @@
 import torch
-from torchvision import transforms
+import torchvision
 
 def mnist():
     train_data, train_labels = [],[]
-    transform= transforms.Normalize((0,), (1,))
+    transform = transforms.Normalize((0,), (1,))
 
     for i in range(5):
         train_data.append(torch.load(f'./data/raw/train_images_{i}.pt'))
