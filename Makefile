@@ -44,6 +44,11 @@ clean:
 data:
 	python $(PROJECT_NAME)/data/make_dataset.py
 
+## Train the model and save a model checkpoint
+train:
+	python $(PROJECT_NAME)/train_model.py
+
+
 #################################################################################
 # Documentation RULES                                                           #
 #################################################################################
